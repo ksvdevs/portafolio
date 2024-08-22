@@ -1,0 +1,36 @@
+.header__container{
+    padding: 12px 0px;
+}
+
+.header__navbar-logo {
+    width: 120px;
+    height: 35px;
+}
+
+.header__navbar-link.nav-link {
+    color: $primary-color;
+    font-weight: 700;
+}
+
+.header__navbar-link.nav-link:hover {
+    color: $secundary-color;
+}
+
+.header__navbar-icon svg {
+    fill: $primary-color;
+}
+
+.header__navbar-icon:hover svg {
+    fill: $secundary-color;
+}
+
+.header__navbar-dropdown-btn {
+    width: 120px;
+    padding: 5px 0px;
+    border: solid 1px $primary-color;
+    border-radius: 5px;
+}
+
+.header__navbar-dropdown-btn:hover {
+    border: solid 1px $secundary-color;
+}

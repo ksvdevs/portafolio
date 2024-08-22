@@ -1,0 +1,143 @@
+.header__container {
+  padding: 12px 0px;
+}
+
+.header__navbar-logo {
+  width: 120px;
+  height: 35px;
+}
+
+.header__navbar-link.nav-link {
+  color: #446C7C;
+  font-weight: 700;
+}
+
+.header__navbar-link.nav-link:hover {
+  color: #F8414D;
+}
+
+.header__navbar-icon svg {
+  fill: #446C7C;
+}
+
+.header__navbar-icon:hover svg {
+  fill: #F8414D;
+}
+
+.header__navbar-dropdown-btn {
+  width: 120px;
+  padding: 5px 0px;
+  border: solid 1px #446C7C;
+  border-radius: 5px;
+}
+
+.header__navbar-dropdown-btn:hover {
+  border: solid 1px #F8414D;
+}
+
+.home {
+  padding: 50px;
+  margin: 0px 0px 70px;
+}
+
+.home__content {
+  padding-top: 80px;
+}
+
+.home__greeting {
+  background-image: linear-gradient(to bottom, #6597AA, #2D4D5F);
+  color: white;
+  padding: 12px 35px;
+  border-radius: 40px 20px 20px 0px;
+  font-family: Arial, sans-serif;
+  font-size: 32px;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.home__name {
+  font-size: 70px;
+  font-weight: 700;
+  color: #446C7C;
+  padding: 20px 0px 0px;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  animation: typing 2s steps(30, end) forwards, blink-caret 0.75s step-end infinite;
+}
+
+.home__surname {
+  display: inline-block;
+  white-space: nowrap;
+  width: 0;
+  color: #F8414D;
+  animation: typing-surname 2s steps(30, end) forwards 2s, blink-caret 0.75s step-end infinite 2s;
+}
+
+.home__specialty {
+  color: #446C7C;
+  font-weight: 700;
+  padding-bottom: 30px;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  animation: typing 2s steps(30, end) forwards 4s, blink-caret 0.75s step-end infinite 4s;
+}
+
+.home__btn {
+  background-color: #F8414D;
+  border-color: #F8414D;
+  padding: 15px 15px;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+}
+
+.home__btn:hover, .home__btn:focus {
+  background-color: #F8414D;
+  border-color: #F8414D;
+}
+
+.home__image {
+  padding-top: 9%;
+}
+
+.home__image img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes typing-surname {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+/*------------------------------------------------------------------
+RESPONSIVE-MEDIA QUERIES
+------------------------------------------------------------------*/
+@media (max-width: 991.98px) {
+  .header__navbar {
+    background-color: #E9EBED;
+  }
+}
+@media (max-width: 767.98px) {
+  .header__navbar {
+    background-color: #E9EBED;
+  }
+}
+@media (max-width: 575.98px) {
+  .header__navbar {
+    background-color: #E9EBED;
+  }
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="header__navbar navbar navbar-expand-lg">
+            <div class="header__container container">
+                <a class="navbar-brand" href="index.html">
+                    <img class="header__navbar-logo" src="images/logo.png" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-menu"
+                    aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="header__menu collapse navbar-collapse" id="main-menu">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="header__navbar-link nav-link" aria-current="page" href="#inicio">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="header__navbar-link nav-link" href="#acerca">Acerca de mí</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="header__navbar-link nav-link" href="#experiencia">Experiencia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="header__navbar-link nav-link" href="#proyecto">Proyectos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="header__navbar-link nav-link" href="#contacto">Contacto</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex align-items-center">
+                        <a href="#" class="header__navbar-icon me-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path
+                                    d="M6.993 12c0 2.761 2.246 5.007 5.007 5.007s5.007-2.246 5.007-5.007S14.761 6.993 12 6.993 6.993 9.239 6.993 12zM12 8.993c1.658 0 3.007 1.349 3.007 3.007S13.658 15.007 12 15.007 8.993 13.658 8.993 12 10.342 8.993 12 8.993zM10.998 19h2v3h-2zm0-17h2v3h-2zm-9 9h3v2h-3zm17 0h3v2h-3zM4.219 18.363l2.12-2.122 1.415 1.414-2.12 2.122zM16.24 6.344l2.122-2.122 1.414 1.414-2.122 2.122zM6.342 7.759 4.22 5.637l1.415-1.414 2.12 2.122zm13.434 10.605-1.414 1.414-2.122-2.122 1.414-1.414z">
+                                </path>
+                            </svg>
+                        </a>
+                        <div class="dropdown">
+                            <button class="header__navbar-dropdown-btn dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 20" width="15" height="10">
+                                    <rect width="10" height="20" fill="#D91023"/>
+                                    <rect x="10" width="10" height="20" fill="#FFFFFF"/>
+                                    <rect x="20" width="10" height="20" fill="#D91023"/>
+                                </svg> 
+                                <span id="dropdownLabel">Perú</span>
+                            </button>
+                            <ul class="header__navbar-dropdown dropdown-menu">
+                                <li>
+                                    <button class="dropdown-item" type="button" onclick="changeDropdownItem('Perú')">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 20" width="15" height="10">
+                                            <rect width="10" height="20" fill="#D91023"/>
+                                            <rect x="10" width="10" height="20" fill="#FFFFFF"/>
+                                            <rect x="20" width="10" height="20" fill="#D91023"/>
+                                        </svg>
+                                        Perú
+                                    </button>
+                                </li>
+                                <li>
+                                    <button class="dropdown-item" type="button" onclick="changeDropdownItem('EE.UU')">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 20" width="15" height="10">
+                                            <rect width="10" height="20" fill="#D91023"/>
+                                            <rect x="10" width="10" height="20" fill="#FFFFFF"/>
+                                            <rect x="20" width="10" height="20" fill="#D91023"/>
+                                        </svg>
+                                        EE.UU
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Home Section -->
+    <section class="home">
+        <div class="container">
+            <div class="row">
+                <div class="home__content col-md-7">
+                    <span class="home__greeting">
+                        Hola !
+                    </span>
+                    <h1 class="home__name"> Nombre <span class="home__surname">Apellido</span></h1>
+                    <h3 class="home__specialty">Especialidad</h3>
+                    <a class="home__btn" href="#">Descargar mi CV
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-file-text">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                            <polyline points="10 9 9 9 8 9"></polyline>
+                        </svg>
+                    </a>
+                </div>
+                <div class="col-md-5 home__image">
+                    <img src="images/banner.png" alt="banner" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section -->
+    <section class="about">
+        <h2 class="about__title">Acerca de mí</h2>
+        <div class="about__content">
+            <p class="about__text">
+                Soy un desarrollador web con experiencia en HTML, CSS y JavaScript...
+            </p>
+            <img src="profile.png" alt="Foto de perfil" class="about__image">
+        </div>
+        <div class="about__skills">
+            <div class="about__skill">
+                <span class="about__skill-name">HTML/CSS</span>
+                <div class="about__skill-bar">
+                    <div class="about__skill-level" style="width: 90%;"></div>
+                </div>
+            </div>
+            <div class="about__skill">
+                <span class="about__skill-name">JavaScript</span>
+                <div class="about__skill-bar">
+                    <div class="about__skill-level" style="width: 80%;"></div>
+                </div>
+            </div>
+            <div class="about__skill">
+                <span class="about__skill-name">React</span>
+                <div class="about__skill-bar">
+                    <div class="about__skill-level" style="width: 70%;"></div>
+                </div>
+            </div>
+            <div class="about__skill">
+                <span class="about__skill-name">Node.js</span>
+                <div class="about__skill-bar">
+                    <div class="about__skill-level" style="width: 60%;"></div>
+                </div>
+            </div>
+            <div class="about__skill">
+                <span class="about__skill-name">UX Design</span>
+                <div class="about__skill-bar">
+                    <div class="about__skill-level" style="width: 40%;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Experience Section -->
+    <section class="experience">
+        <h2 class="experience__title">Experiencia</h2>
+        <div class="experience__item">
+            <h3 class="experience__company">Nombre de la empresa</h3>
+            <p class="experience__duration">Enero 2022 - Junio 2022</p>
+            <p class="experience__description">
+                Descripción del trabajo realizado en esta empresa, incluyendo las herramientas y tecnologías
+                utilizadas...
+            </p>
+        </div>
+    </section>
+    <!-- Projects Section -->
+    <section class="projects">
+        <h2 class="projects__title">Proyectos</h2>
+        <div class="projects__list">
+            <div class="projects__item">
+                <img src="paleatos.png" alt="Paleatos" class="projects__image">
+                <h3 class="projects__name">Paleatos</h3>
+                <p class="projects__date">Dec 2020</p>
+                <div class="projects__tech">
+                    <span class="projects__tech-item">SASS</span>
+                    <span class="projects__tech-item">HTML5</span>
+                    <span class="projects__tech-item">JavaScript</span>
+                </div>
+                <a href="#" class="projects__link">VER</a>
+            </div>
+            <div class="projects__item">
+                <img src="crystal.png" alt="Crystal" class="projects__image">
+                <h3 class="projects__name">Crystal</h3>
+                <p class="projects__date">Dec 2020</p>
+                <div class="projects__tech">
+                    <span class="projects__tech-item">SASS</span>
+                    <span class="projects__tech-item">HTML5</span>
+                    <span class="projects__tech-item">JavaScript</span>
+                </div>
+                <a href="#" class="projects__link">VER</a>
+            </div>
+            <div class="projects__item">
+                <img src="maria_almenara.png" alt="Maria Almenara" class="projects__image">
+                <h3 class="projects__name">Maria Almenara</h3>
+                <p class="projects__date">Dec 2020</p>
+                <div class="projects__tech">
+                    <span class="projects__tech-item">SASS</span>
+                    <span class="projects__tech-item">HTML5</span>
+                    <span class="projects__tech-item">JavaScript</span>
+                </div>
+                <a href="#" class="projects__link">VER</a>
+            </div>
+            <div class="projects__item">
+                <img src="imagina.png" alt="Imagina" class="projects__image">
+                <h3 class="projects__name">Imagina</h3>
+                <p class="projects__date">Dec 2020</p>
+                <div class="projects__tech">
+                    <span class="projects__tech-item">SASS</span>
+                    <span class="projects__tech-item">HTML5</span>
+                    <span class="projects__tech-item">JavaScript</span>
+                </div>
+                <a href="#" class="projects__link">VER</a>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section class="contact">
+        <h2 class="contact__title">Contacto</h2>
+        <form action="#" class="contact__form">
+            <input type="text" class="contact__input" placeholder="Nombre">
+            <input type="email" class="contact__input" placeholder="Correo">
+            <textarea class="contact__textarea" placeholder="Mensaje"></textarea>
+            <button type="submit" class="contact__button">Enviar Mensaje</button>
+        </form>
+        <div class="contact__social">
+            <a href="mailto:kelly123@gmail.com" class="contact__social-link">Email</a>
+            <a href="https://linkedin.com/in/ksv" class="contact__social-link">LinkedIn</a>
+            <a href="https://github.com/ksv" class="contact__social-link">GitHub</a>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <p class="footer__text">Copyright © 2022 developres</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
